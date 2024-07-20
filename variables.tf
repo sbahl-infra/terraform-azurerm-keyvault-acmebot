@@ -32,6 +32,12 @@ variable "allowed_ip_addresses" {
   default     = []
 }
 
+variable "subnet_id" {
+  type        = string
+  description = "The subnet ID to place the function app in."
+  default     = null
+}
+
 variable "additional_app_settings" {
   type        = map(string)
   description = "Additional settings to set for the function app"
