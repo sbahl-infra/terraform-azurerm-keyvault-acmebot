@@ -18,3 +18,8 @@ output "api_key" {
   description = "Created Default Functions API Key"
   sensitive   = true
 }
+
+output "function_app" {
+  value       = azurerm_windows_function_app.function
+  description = "Created Function App"
+}
